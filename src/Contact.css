@@ -1,0 +1,102 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+.contact_container{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top:20px;
+  height: 100%;
+  width: 100%;
+}
+.rocket_container {
+    position: fixed;
+    top:53%;
+    right: 0%;
+    width: 350px; /* Adjust according to your image size */
+    height: 370px; /* Adjust according to your image size */
+    /* margin: 100px auto; Adjust according to your layout */
+    border: 2px solid #ccc; /* Just for visual reference */
+    border-radius: 50%; /* Create a circle */
+    animation: rotate 5s linear infinite; /* Adjust animation duration as needed */
+    background-image: radial-gradient(
+    circle, /* optional: circle or ellipse */
+    #FFFDCB 0%,  /* color 1 at 0% */
+    #EBF400 25%, /* color 2 at 25% */
+    #F57D1F 50%, /* color 3 at 50% */
+    #F72798 75%, /* color 4 at 75% */
+    #000000 100%  /* color 5 back to color 1 at 100% */
+  );
+    border: 5px solid  #EBF400; /* Retro red border */
+    border-radius: 50%; /* Make it a circle */
+    box-shadow: inset 0 0 20px #FFFDCB; /* Inner shadow for a retro effect */
+    margin: 0 ;
+    padding: 0;
+
+  }
+  
+  .rocket {
+    position: absolute;
+    top: -4%;
+    left: -4%;
+    animation: rocket 7s linear infinite;
+    /* transform: translate(1px, 1px); */
+    width: 100px; /* Adjust according to your image size */
+    height: 100px; /* Adjust according to your image size */
+    margin: 0;
+    padding: 0;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  @keyframes rocket {
+    100%{
+      transform: rotate(0deg); /* Rotate twice as fast */
+
+    }
+  }
+
+  .contact_container h2{
+    font-family: "Pixelify Sans", sans-serif;  
+
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFDCB;
+    padding: 0px;
+    margin-bottom: 0px;
+
+  }
+  .contact_container h1{
+    font-family: "Pixelify Sans", sans-serif;  
+  
+    font-style: normal;
+    font-weight: 400;
+    font-style: normal;
+    color: #FF8E8F; 
+    padding:0;
+    margin-bottom: 0; 
+  }
+  .contact_container h3{
+    font-family: "Titillium Web", sans-serif; 
+
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* top:-20%; */
+    left: -20%;  
+  }

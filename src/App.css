@@ -1,0 +1,157 @@
+ #root {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+
+} 
+
+body {
+
+  height: 100%; /* Added to center content vertically */
+  margin: 0; /* Reset default body margin */
+  padding: 0;
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  /* position: relative; */
+  /* text-align: center; */
+  color: #FFEDD8;
+  background: #FFEDD8;
+  
+  
+}
+.root{
+  padding: 0;
+  margin: 0;
+}
+.container{
+  padding: 0;
+  margin: 0;
+}
+
+.red {
+  background-color: #240A34 ;
+  width: 95vw;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  z-index: 4;
+}
+.white {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;  
+  background-color: #FFEDD8;
+  width: 100%;
+  height: 100%;
+  padding:0;
+  margin:0;
+}
+
+.logo{
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Maintain aspect ratio */
+  position: fixed;
+  left:23px;
+  top: -10px;
+}
+
+
+/* Navigation Bar */
+.navBar{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 20vw;
+  padding: none;
+  margin:none;
+  margin-top: 20px;
+}
+.btn > a {
+  border: none;
+  border-radius: 50%;
+  background: none;
+  padding: 10px;
+  margin: none;
+  font-size: 15px;
+  color:  black;
+  transition: 0.4s;
+  z-index: 3;
+}
+
+.btn > a:hover{  
+  border: none;
+  border-radius: 8%;
+  background: #EABE6C;
+  color: black;
+}
+
+/* Dropdown */
+
+.Dropdown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 10px;
+  top: 5px;
+  color: white;
+  z-index: 5;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  border: 1px solid #891652;
+  background: #891652;
+  text-align: center;
+}
+
+.Dropdown > ul {
+  position: relative;
+  top: 20px;
+  padding: 0;
+  margin: 0;
+  text-align: center;  
+}
+
+li{ 
+  transition: 0.4s;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 66px;
+  padding-right: 66px;
+  border-radius: 0%;
+}
+li:hover{
+  background-color: #c75f95;
+  border:1px solid black;
+}
+ul {
+  list-style-type: none;
+}
+
+.Drop{
+  width: 70px; /* Adjust the width as needed */
+  height: 70px;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  right: 9px;
+  top: 3px;
+  z-index: 6;
+}
+li > a{
+  color: black; 
+  text-decoration: none;
+} 
+li > a:visited{
+  color: #EABE6C;
+}
+li > a:hover{
+  color: #FFEDD8;
+}
+

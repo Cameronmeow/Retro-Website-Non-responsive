@@ -1,0 +1,107 @@
+.Nav_container .logo{
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Maintain aspect ratio */
+    position: fixed;
+    left:23px;
+    top: -10px;
+  }
+.Nav_container{
+  font-family: "Pixelify Sans", sans-serif;  
+  font-style: normal;
+  font-weight: 400;
+}
+  .Nav_container .Dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 10px;
+    top: 5px;
+    color: white;
+    z-index: 5;
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    background: #FFB38E;
+    text-align: center;
+  }
+  
+  .Dropdown > ul {
+    position: relative;
+    top: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;  
+  }
+  
+  li{ 
+    transition: 0.4s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 67px;
+    padding-right: 67px;
+    border:none;
+  }
+  li:hover{
+    font-size: 15px;
+    background-color: #FFFDCB;
+    border:none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 67px;
+    padding-right: 67px;
+    color: #000000;
+  }
+  ul {
+    list-style-type: none;
+  }
+  
+  .Drop{
+    width: 70px; /* Adjust the width as needed */
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    right: 9px;
+    top: 3px;
+    z-index: 6;
+    
+  }
+  li > a{
+    font-size: 15px;
+    color: black; 
+    text-decoration: none;
+  } 
+  li > a:visited{
+    color: #000;
+  }
+
+  .Nav_container .navBar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30vw;
+    padding: none;
+    margin:none;
+    margin-top: 20px;
+    position: relative;
+    left: 35%;
+  }
+  .btn > a {
+    border: none;
+    border-radius: 50%;
+    background: none;
+    padding: 10px;
+    margin: none;
+    font-size: 15px;
+    color:  #FFFDCB;
+    transition: 0.4s;
+    z-index: 3;
+  }
+  
+  .btn > a:hover{  
+    border: none;
+    border-radius: 8%;
+    background: #FFFDCB;
+    color: black;
+  }
